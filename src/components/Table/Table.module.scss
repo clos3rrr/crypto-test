@@ -1,0 +1,42 @@
+.wrapper {
+  overflow-x: auto;
+  width: 100%;
+
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    font-size: 20px;
+  
+    &__item {
+      cursor: pointer;
+    }
+  
+    &__item:hover {
+      background-color: #fafafa;
+    }
+  
+    &__button {
+      cursor: pointer;
+      background: url("../../assets/plus.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      background-position-y: center;
+    }
+  
+    @media (max-width: 685px) {
+      font-size: 15px;
+    }
+  
+    td, th {
+      text-align: left;
+      padding: 8px;
+    }
+  }
+}
+
+

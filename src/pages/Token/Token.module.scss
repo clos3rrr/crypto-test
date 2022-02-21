@@ -1,0 +1,45 @@
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  .main {
+    max-width: 1000px;
+    width: 100%;
+    font-size: 20px;
+
+    &__infoSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      @media (max-width: 660px) {
+        flex-direction: column;
+        font-size: 16px;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+.infoSection {
+  &__item {
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top: 5px;
+
+    &:hover {
+      background: rgb(172, 170, 170);
+    }
+  }
+}

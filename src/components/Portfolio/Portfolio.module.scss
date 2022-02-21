@@ -1,0 +1,41 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__label {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  .portfolioItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+
+    &__symbol {
+      width: 40%;
+    }
+
+    &__count {
+      width: 40%;
+    }
+
+    &__button {
+      cursor: pointer;
+      background: url("../../assets/cross.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      background-position-y: center;
+    }
+  }
+}

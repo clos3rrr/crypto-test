@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 20px;
+
+  &__item {
+    color: #353232;
+  }
+
+  &__item_current {
+    color: #000000;
+    font-weight: bold;
+  }
+}
